@@ -1,0 +1,160 @@
+/* HEADER */
+header {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* NAV */
+nav {
+    margin: 0 15%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 8%;
+    align-items: center;
+}
+
+.header__title {
+    font-family: "Monsterrat-Bold", serif;
+    color: var(--text-regular);
+    font-size: 36px;
+}
+
+.header__wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.header--navigation {
+    margin-top: 5px;
+    gap: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.authorization {
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.authorization .login {
+    border: none;
+    background-color: #fff;
+    color: var(--text-light-green);
+    font-family: "Monsterrat-Bold", serif;
+    font-size: 18px;
+}
+
+/* MAIN */
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--light-orange);
+    border-radius: 0 0 25%;
+    width: 110px;
+    height: 150px;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 0 25%;
+    background-color: var(--light-orange);
+}
+
+/* INFO */
+.info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+}
+
+.info--wrapper {
+    margin: 157px 0;
+    padding-right: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info--upper-text {
+    color: var(--text-light-green);
+    text-align: left;
+}
+
+.info--title {
+    width: 70%;
+    font-size: 58px;
+    margin: 15px 0;
+}
+
+.info--description {
+    color: var(--text-grayed);
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.info--buttons {
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* Courses */
+.courses {
+    margin: 0 195px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 120px;
+}
+
+.courses div {
+    text-align: center;
+}
+
+.courses--hero {
+    padding: 160px 180px;
+}
+
+.courses--wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.courses--upper-text {
+    color: var(--text-light-green);
+    font-size: 18px;
+}
+
+.courses--title {
+    font-size: 58px;
+}
+
+.courses--description p {
+    font-family: "Monsterrat", serif;
+    color: var(--text-grayed);
+    font-size: 20px;
+}

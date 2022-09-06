@@ -1,0 +1,71 @@
+:root {
+    --light-orange: rgb(255, 171, 113);
+    --text-regular: #252B42;
+    --text-grayed: #737373;
+    --text-light-green: #96BB7C;
+}
+
+@font-face {
+    font-family: "Monsterrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+a {
+    color: var(--text-grayed);
+    font-family: "Monsterrat-Bold", serif;
+    font-size: 18px;
+}
+
+.main-button, .simple-button {
+    background-color: var(--text-light-green);
+    border-radius: 5px;
+    border: 1px solid var(--text-light-green);
+    padding: 15px 25px;
+    width: 130px;
+    height: 60px;
+
+    color: #fff;
+    font-family: "Monsterrat-Bold", serif;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    gap: 15px;
+}
+
+.simple-button {
+    background-color: #fff !important;
+    color: var(--text-light-green)
+}
+
+.hero--cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero--card {
+    padding: 35px 60px;
+    width: 500px;
+    height: 300px;
+}
+
+.hero--wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero--description {
+    width: 130px;
+}

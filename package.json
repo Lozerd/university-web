@@ -1,0 +1,9 @@
+{
+  "name": "school_sharp",
+  "version": "1.0.0",
+  "dependencies": {
+    "glob": "^8.0.3",
+    "webpack": "^5.74.0",
+    "webpack-bundle-tracker": "^1.6.0"
+  }
+}
