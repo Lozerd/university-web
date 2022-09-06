@@ -54,8 +54,20 @@ a {
 
 .hero--card {
     padding: 35px 60px;
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.hero--card img {
+    width: 55px;
+    aspect-ratio: 1;
 }
 
 .hero--wrapper {
@@ -64,6 +76,17 @@ a {
     justify-content: center;
     align-items: center;
     gap: 40px;
+}
+
+.hero--title {
+    position: relative;
+}
+
+.hero--title::after {
+    content: url("../media/svg/hr.svg");
+    position: absolute;
+    top: 30px;
+    right: 36%;
 }
 
 .hero--description {

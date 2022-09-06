@@ -59,8 +59,8 @@
                     <p>Problems trying to resolve the conflict between</p>
                     <p>the two major realms of Classical physics: Newtonian mechanics</p>
                 </div>
-                <img src="./media/img/video.png" alt="">
             </div>
+            <img src="./media/img/video.png" alt="">
         </div>
         <div class="courses--hero">
             <div class="courses--wrapper">
@@ -73,7 +73,7 @@
             </div>
             <div class="hero--cards">
                 <div class="hero--card">
-                    <img src="" alt="">
+                    <img src="./media/img/card--1.png" alt="">
                     <div class="hero--wrapper">
                         <div class="hero--title">training Courses</div>
                         <div class="hero--description">
@@ -84,9 +84,9 @@
                     </div>
                 </div>
                 <div class="hero--card">
-                    <img src="" alt="">
+                    <img src="./media/img/card--2.png" alt="">
                     <div class="hero--wrapper">
-                        <div class="hero--title">training Courses</div>
+                        <div class="hero--title">2,769 online courses</div>
                         <div class="hero--description">
                             The gradual
                             accumulation and
@@ -97,13 +97,16 @@
             </div>
         </div>
     </section>
-    <div class="ankor"></div>
+    <div class="anchor">&nbsp;</div>
 </main>
 <footer></footer>
 <script>
-    document.querySelector('.ankor').scrollIntoView({
-        behavior: 'smooth'
-    });
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector('.anchor').scrollIntoView({
+            behavior: 'smooth',
+            block: 'end'
+        });
+    })
 </script>
 </body>
 
