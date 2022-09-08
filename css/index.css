@@ -123,7 +123,6 @@ main::after {
 
 /* Courses */
 .courses {
-    margin: 0 195px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -142,24 +141,430 @@ main::after {
     gap: 100px;
 }
 
-.courses--wrapper {
+/* Our Courses */
+.our-wrapper {
+    padding: 0 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-courses--info {
+    padding: 80px 160px 0;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 35px;
+}
+
+.our-courses--title {
+    position: relative;
+
+    text-align: left !important;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.our-courses--title::before {
+    content: url("../media/svg/hr_medium.svg");
+    position: absolute;
+    top: -85px;
+}
+
+.our-courses--description {
+    text-align: left !important;
+    font-family: "Monsterrat", serif;
+    color: var(--text-grayed);
+    line-height: 25px;
+}
+
+.our-courses--button--wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.our-courses--button {
+    color: var(--text-light-green);
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.our-courses--button::after {
+    content: url("../media/svg/right-arrow-no-stick.svg");
+    position: absolute;
+    top: 2px;
+    right: -20px;
+}
+
+/* Every Client */
+.client {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.slider {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.slider--card {
+    width: 348px;
+    min-width: 348px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.slider--picture {
+    position: relative;
+}
+
+.picture--buttons {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.picture--buttons button {
+    border-radius: 100%;
+}
+
+.slider--info {
+    padding: 20px 20px 35px !important;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background: #2D4059;
+    border-radius: 20px;
+    width: 60px;
+    height: 30px;
+}
+
+.rating--number {
+    font-family: "Monsterrat", serif;
+
+    margin-top: 3px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.sales {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sales--number {
+    color: var(--text-grayed);
+}
+
+.prices {
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+}
+
+.prices--old {
+    color: var(--text-muted);
+}
+
+.prices--new {
+    color: var(--light-orange);
+}
+
+/* All Courses */
+.list {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 120px;
+}
+
+.list .slider {
+    gap: 60px !important;
+}
+
+.item--container {
+    position: relative;
+    width: 100%;
+    padding: 50px 40px;
+}
+
+.item--is_new {
+    position: absolute;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 24px;
+
+    border-radius: 100%;
+    width: 90px;
+    aspect-ratio: 1;
+    top: -45px;
+    right: -45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .slider--card:nth-child(2n+1) .item--container {
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.slider .slider--card:nth-child(2n) .item--container {
+    background-color: var(--dark-blue);
+}
+
+.item--content {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.item--content .main-button {
+    width: 100%;
+}
+
+.item--is_free {
+    font-size: 28px;
+}
+
+.slider .slider--card:nth-child(2n) .item--is_free {
+    color: #fff;
+}
+
+.item--title p {
+    color: var(--text-grayed) !important;
+}
+
+.slider .slider--card:nth-child(2n) .item--title p {
+    color: #fff !important;
+}
+
+.item--price {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.item--price__number {
+    font-size: 45px;
+    color: var(--text-light-green);
+}
+
+.item--price__text {
+    color: var(--text-light-blue);
+}
+
+.item--description p {
+    color: var(--text-grayed);
+}
+
+.slider .slider--card:nth-child(2n) .item--description p {
+    color: #fff;
+}
+
+.item--advantages li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.item--advantages li span {
+    text-align: left;
+}
+
+.slider .slider--card:nth-child(2n) .item--advantages li span {
+    color: #fff;
+}
+
+/* Teachers */
+.teachers {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 120px;
+}
+
+.teacher--info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
-.courses--upper-text {
-    color: var(--text-light-green);
-    font-size: 18px;
+.teacher--description {
+    width: 60%;
+    margin: 0 auto;
+    color: var(--text-grayed);
+    font-family: "Monsterrat", serif;
+    line-height: 22px;
 }
 
-.courses--title {
-    font-size: 58px;
+.teacher--rating {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 7px;
 }
 
-.courses--description p {
+.teacher--credentials {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+/* Contact-Us */
+.contact-us {
+    margin-top: 20px;
+    padding: 120px 600px;
+    height: 600px;
+    background-color: var(--dark-blue);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.contact-us .wrapper {
+    text-align: center;
+}
+
+.contact-us .title {
+    font-size: 24px;
+}
+
+.contact-us .wrapper .title, .contact-us .wrapper .description p {
+    color: #fff !important;
+}
+
+.subscribe {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.main-input {
+    flex-grow: 1;
+    padding: 20px;
+    height: 60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+
     font-family: "Monsterrat", serif;
     color: var(--text-grayed);
-    font-size: 20px;
+}
+
+.subscribe .main-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+.footer--nav {
+    padding: 50px 200px;
+}
+
+.footer--nav .menus {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.footer--nav .menus li:not(:last-child) {
+    width: 200px;
+}
+
+.menus li {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.menu__parent--title {
+    color: var(--text-regular);
+}
+
+.menu__children li span {
+    color: var(--text-grayed);
+}
+
+.menu__children {
+    width: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.menus--contacts {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menus--contacts div {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.menus--contacts div span {
+    color: var(--text-grayed);
+}
+
+.footer--contacts {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 400px 0 195px;
+    /*gap: 500px;*/
+}
+
+.footer--license {
+    color: var(--text-grayed);
+}
+
+.footer--socials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 20px;
 }
