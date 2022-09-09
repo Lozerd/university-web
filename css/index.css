@@ -10,7 +10,7 @@ header {
 /* NAV */
 nav {
     margin: 0 15%;
-    width: 100%;
+    width: inherit;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -25,10 +25,11 @@ nav {
 }
 
 .header__wrapper {
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 200px;
 }
 
 .header--navigation {
@@ -82,7 +83,7 @@ main::after {
 /* INFO */
 .info {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 
 }
@@ -127,6 +128,7 @@ main::after {
     flex-flow: column wrap;
     justify-content: center;
     gap: 120px;
+    padding: 160px 180px;
 }
 
 .courses div {
@@ -134,7 +136,6 @@ main::after {
 }
 
 .courses--hero {
-    padding: 160px 180px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -143,11 +144,11 @@ main::after {
 
 /* Our Courses */
 .our-wrapper {
-    padding: 0 20px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .our-courses--info {
@@ -440,7 +441,7 @@ main::after {
 /* Contact-Us */
 .contact-us {
     margin-top: 20px;
-    padding: 120px 600px;
+    padding: 120px 300px;
     height: 600px;
     background-color: var(--dark-blue);
 
@@ -493,29 +494,29 @@ footer {
     flex-flow: column nowrap;
     align-items: flex-start;
 }
+
 .footer--nav {
-    padding: 50px 200px;
+    margin: 0 auto;
+    /*padding: 50px 10%;*/
 }
 
 .footer--nav .menus {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 100px;
-}
-
-.footer--nav .menus li:not(:last-child) {
-    width: 200px;
+    gap: 50px;
 }
 
 .menus li {
     display: flex;
     flex-flow: column wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .menu__parent--title {
+    white-space: nowrap;
     color: var(--text-regular);
 }
 
@@ -524,12 +525,15 @@ footer {
 }
 
 .menu__children {
-    width: 100px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+}
+
+.menu__child--title {
+    white-space: nowrap;
 }
 
 .menus--contacts {
@@ -555,7 +559,6 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 0 400px 0 195px;
-    /*gap: 500px;*/
 }
 
 .footer--license {
