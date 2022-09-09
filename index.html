@@ -534,7 +534,7 @@
         </ul>
     </div>
 </footer>
-<!--<div style="position: absolute" class="anchor">&nbsp;</div>-->
+<div style="position: absolute" class="anchor">&nbsp;</div>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('.anchor').scrollIntoView({
@@ -542,17 +542,16 @@
             block: 'start'
         });
 
-        // document.querySelectorAll('.picture--buttons button').forEach(
-        //     (e, i) => {
-        //         e.addEventListener('click', (t) => {
-        //             let productId = e.closest('.slider--card').getAttribute("data-id")
-        //             let action = e.className.split('button--')[1];
-        //             console.log(`${action} on ${productId}`);
-        //         })
-        //     }
-        // )
+        document.querySelectorAll('.picture--buttons button').forEach(
+            (e, i) => {
+                e.addEventListener('click', (t) => {
+                    let productId = e.closest('.slider--card').getAttribute("data-id")
+                    let action = e.className.split('button--')[1];
+                    console.log(`${action} on ${productId}`);
+                })
+            }
+        )
     })
 </script>
 </body>
-
 </html>
