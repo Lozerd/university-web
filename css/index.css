@@ -13,8 +13,7 @@ nav {
     width: inherit;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    gap: 8%;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -25,7 +24,6 @@ nav {
 }
 
 .header__wrapper {
-    /*width: 100%;*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -42,10 +40,10 @@ nav {
 }
 
 .authorization {
-    width: 20%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .authorization .login {
@@ -497,7 +495,6 @@ footer {
 
 .footer--nav {
     margin: 0 auto;
-    /*padding: 50px 10%;*/
 }
 
 .footer--nav .menus {
