@@ -20,10 +20,6 @@
     src: url("../fonts/Montserrat-Regular.ttf");
 }
 
-* {
-    border: 1px solid red;
-}
-
 a {
     color: var(--text-grayed);
     font-family: "Monsterrat-Bold", serif;
